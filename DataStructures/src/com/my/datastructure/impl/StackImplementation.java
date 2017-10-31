@@ -38,7 +38,7 @@ public class StackImplementation<T extends Object> {
 		else
 		{
 			stackArray[++top]=item;
-			System.out.println("New element added"+item);
+			System.out.println("New element added: "+item);
 		}
 	}
 	
@@ -53,7 +53,7 @@ public class StackImplementation<T extends Object> {
 		else
 		{
 			item = stackArray[top--];
-			System.out.println("Element removed"+item);
+			System.out.println("Element removed: "+item);
 		}
 		return item;
 	}
@@ -62,7 +62,7 @@ public class StackImplementation<T extends Object> {
 	{
 		StackImplementation<String> stringStack = new StackImplementation<String>(5);
 		stringStack.push("java2novice");
-		stringStack.push("vivek");
+		stringStack.push("superNovice");
 		stringStack.push("andrew");
 		stringStack.push("douglass");
 		stringStack.pop();
